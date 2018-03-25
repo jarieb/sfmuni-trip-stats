@@ -1,0 +1,110 @@
+
+#user-tools {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.2em 10px;
+    font-family: verdana, sans-serif;
+    font-size: .8em;
+    text-align: right;
+}
+
+form {
+    display: inline;
+}
+
+#add_form {
+    display: none;
+    margin: 15px 0;
+}
+
+#add_form.form-errors {
+    display: block;
+}
+
+#map {
+    height: 200px;
+    width: 266px;
+    margin-right: 15px;
+}
+
+#left_col_25 {
+   float:left;
+   width:25%;
+}
+#right_col_75 {
+   float:right;
+   width:75%;
+}
+
+.table-links tr > td > a {
+    display: block;
+    text-decoration: none;
+}
+
+.table-links tr:hover > td > a {
+    text-decoration: underline;
+}
+
+.table-number {
+    text-align: right;
+    white-space: nowrap;
+}
+
+#main_nav {
+    border-radius: 0 0 8px 8px;
+}
+
+label#role_data {
+    padding-left: 1em;
+    margin-top: 7px;
+}
+
+.container-table {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden { display: none; }
+
+.symbol {
+    width:4px;
+    height:15px;
+    margin-right:5px;
+    float:left;
+}
+.seriesName {
+    float:left;
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+    fill: #333333;
+    margin-right: 20px;
+}
+
+.item {
+    height:30px;
+}
+
+@media screen and (min-device-width:230px){
+    .chart{
+        width:230px;
+    }
+}
+@media screen and (min-device-width:768px){
+    .chart{
+        width:768px;
+    }
+}
+@media screen and (min-device-width:992px){
+    .chart{
+        width:992px;
+    }
+}
+@media screen and (min-device-width:1200px){
+    .chart{
+        width:100%;
+    }
+}

@@ -1,0 +1,33 @@
+{% extends "collect/base.html" %}
+{% load widget_tweaks %}
+{% load staticfiles %}
+
+{% block title %}Trip Tracker{% endblock %}
+{% block full_bleed_content %}
+<div>
+	<h1> SF Muni Trip Tracker </h1>
+</div>
+<form class="form-inline" action="/" method="post">{% csrf_token %}
+  <div>
+    <div class="form-group">
+        <label style="margin-left: 0.5em">Line: </label>
+        {% render_field frmRoute.route class+="selectpicker" %}
+        <p></p>
+    </div>
+    <div>
+        <p></p>
+        <label style="margin-left: 0.5em">Bus # (optional): </label>
+        <input style="margin-left: 0.5em" type="text" name="bus_number">
+    </div>
+    <div>
+        <p></p>
+        <input style="margin-left: 0.5em;width:250px;height:50px;" class="btn btn-primary" id="id_buttonAction" type="submit" name="Action" value="Start"/>
+    </div>
+    <div>
+    <p></p>
+        <label style="margin-left: 0.5em">Time: </label>
+        <input style="margin-left: 0.5em" type="text" name="start_time">
+    </div>
+  </div>
+</form>
+{% endblock full_bleed_content %}
